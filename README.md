@@ -1,4 +1,4 @@
-# Godot-study
+# One Oracle Program-study
 Este repositório foi criado com o objetivo de documentar o meu aprendizado durante o programa da ONE Oracle 
 A ideia é qu seja uma biblioteca de consulta para funções e ideia mais simples aprendidas ao longo do curso.
 Projetos de maior expressão serão armazenados em outros repositórios, mas futuramente mencionados em algum local daqui para centralizar/referenciar todo conhecimento.
