@@ -1,5 +1,8 @@
-// Manipulação do HTML
+// definição de variaveis;
+let numerosSorteados = [];
+let nmax = 100;
 
+// Manipulação do HTML
 let titulo = document.querySelector('h1');
 titulo.innerHTML =  'Jogo do Número Secreto';
 
@@ -44,7 +47,16 @@ function exibirMensagemNaTela(tag, mensagem){
 
 //função com retorno
 function gerarNumeroAleatorio(){
-    return Math.round(Math.random() * 100);
+    let numeroSorteado = Math.round(Math.random() * nmax);
+    if(numerosSorteados.includes(numeroSorteado)){
+        gerarNumeroAleatorio();
+    } else {
+        if(numerosSorteados.length == nmax/2){
+            numerosSorteados = [];
+        }
+        numerosSorteados.push(numeroSorteado);
+        return numeroSorteado;
+    }
 }
 
 //desafio 2
@@ -85,3 +97,13 @@ function reiniciarJogo(){
     tentativas = 0;
     document.getElementById('reiniciar').setAttribute('disabled', 'disabled');
 }
+
+// arrays
+/*
+let frutas = ['banana', 'maçã', 'uva', 'morango', 'abacaxi'];
+console.log(frutas.length); // tamanho da lista
+console.log(frutas[0]); // bananas
+frutas.push('laranja'); // adiciona um elemento no final da lista
+frutas.pop(); // remove o último elemento da lista
+frutas.shift(); // remove o primeiro elemento da lista
+*/
