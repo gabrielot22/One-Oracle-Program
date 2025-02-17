@@ -1,0 +1,38 @@
+*{   /*definiçao para todo elemento*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #37353E;
+    color: #F6F6F6;
+}
+
+strong {
+    color: #6B55BE;
+}
+
+a { 
+    font-size: 1.4em;
+    color: #4152E8;
+    text-decoration: none;
+    border: 2px solid #575269 ;
+    margin: 1em;
+    padding: 0.1em 1em;
+}
+
+
+.title_strong{ /*definiçao por classe*/
+    color: #841ee4;
+}
+
+#toc { /*definiçao por id*/
+    background-attachment: fixed;
+}
+
+[class^="container"] { /*definiçao por atributo*/
+    background-color: #F6F6F6;
+    color: #37353E;
+}
+
