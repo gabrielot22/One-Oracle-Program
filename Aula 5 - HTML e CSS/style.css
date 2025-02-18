@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Shafarik&display=swap');
+
 *{   /*definiçao para todo elemento*/
     margin: 0;
     padding: 0;
@@ -5,6 +7,8 @@
 }
 
 body {
+    height: 100vh; /*100% da altura da tela*/
+    box-sizing: border-box; /*inclui padding e border no tamanho total*/
     background-color: #37353E;
     color: #F6F6F6;
 }
@@ -14,12 +18,13 @@ strong {
 }
 
 a { 
-    font-size: 1.4em;
-    color: #4152E8;
+    background-color: #4152E8;
+    font-size: 20px;
+    color: #000000;
     text-decoration: none;
-    border: 2px solid #575269 ;
-    margin: 1em;
-    padding: 0.1em 1em;
+    border-radius: 10px;
+    padding: 10px 40px;
+    text-align: center;
 }
 
 
@@ -36,3 +41,34 @@ a {
     color: #37353E;
 }
 
+.formato{
+    margin: 3em;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formato__conteudo{
+    width: 680px;
+}
+
+.formato__conteudo__title{
+    font-size: 32px;
+    font-family: 'Playfair Display', serif;
+    padding-right: 2em;
+}
+
+.formato__conteudo__text{
+    padding-top: 1em;
+    padding-right: 3em;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+footer{
+    margin: 3em;
+    display: flex;
+    justify-content: center;
+    column-gap: 100px;
+
+}
