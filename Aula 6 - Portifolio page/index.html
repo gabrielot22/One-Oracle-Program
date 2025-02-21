@@ -5,12 +5,17 @@
         <title>Portifolio</title>
         <meta charset = "UTF-8"> <!-- Declaração de codificação de caracteres -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height"> <!-- Declaração de viewport -->
         <link rel="stylesheet" href="style.css"> <!-- Importação de arquivo CSS -->
     </head>
     
     <body>
         <header> 
+            <nav class="header__nav"> <!-- Navegação -->
+                <a class="header__link__in" href="index.html">Home</a>
+                <a class="header__link" href="Projects.html">Projetos</a>
+                <a class="header__link" href="about.html">Sobre Mim</a>
+            </nav>
         </header>
         
         <main class="formato">
@@ -35,13 +40,13 @@
                     </a>
                 </div>
             </section>
-            <img src="images/download.jpeg" alt="Imagem LinkedIn Gabriel" width="275" height="325">
+            <img class="formato__imagem" src="images/download.jpeg" alt="Imagem LinkedIn Gabriel">
         </main>
 
         <footer class="footer__conteudo">
-            <div> 
+            <p> 
                 &copy; 2025 Gabriel Oliveira. Todos os direitos reservados.
-            </div>
+            <p>
         </footer>
 
     </body>
